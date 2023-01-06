@@ -5,8 +5,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- develop
-- main
+ branches:
+   include:
+     - develop
+     - main
 
 
 pool:
