@@ -5,16 +5,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
- branches:
-   include:
-     - develop
-     - main
-
+- develop
+- main
 
 pool:
   vmImage: ubuntu-latest
 
-
 steps:
-- script: |
+- script:
     echo "Hello World"
