@@ -16,6 +16,8 @@ parameters:
 
 variables:
 - group: vercel-ofm-dev
+- name: PUBLIC_URL
+  value: https://outfront-dev.vercel.app/
 
 
 trigger: none
