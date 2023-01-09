@@ -16,7 +16,7 @@ parameters:
 
 variables:
 - group: vercel-ofm-dev
-- name: PUBLIC_URL
+
 
 trigger: none
 
@@ -27,4 +27,6 @@ steps:
 - script:
     echo "Hello World develop"
 - script: 
-    echo $(PUBLIC_URL)
+    echo ${{ vercel-ofm-dev.PUBLIC_URL }}
+- script: 
+    echo ${{ parameters.env }}
