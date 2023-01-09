@@ -14,6 +14,10 @@ parameters:
   - QA
   - PRoduction
 
+variables:
+- group: vercel-ofm-dev
+- name: PUBLIC_URL
+
 trigger: none
 
 pool:
@@ -22,3 +26,5 @@ pool:
 steps:
 - script:
     echo "Hello World develop"
+- script: 
+    echo $(PUBLIC_URL)
