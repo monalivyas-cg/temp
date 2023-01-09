@@ -14,7 +14,7 @@ parameters:
   - QA
   - PRoduction
 
-variables:
+variables: 
 - group: vercel-ofm-dev
 
 
@@ -28,7 +28,7 @@ steps:
     echo "Hello World develop"
 - script: 
     echo ${{ parameters.env }}
-    echo ${{ join('-', parameters.env) }}
+    echo vercel-ofm-${{ parameters.env }}
 - script: 
     echo $(PUBLIC_URL)
     echo $(VERCEL_ORG_ID)
