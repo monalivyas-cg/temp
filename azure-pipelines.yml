@@ -4,6 +4,15 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+parameters:
+- name: environment
+  displayName: Checkout clean
+  type: boolean
+  default: true
+  values:
+  - false
+  - true
+
 trigger:
   - main
   - develop
