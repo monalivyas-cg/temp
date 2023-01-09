@@ -15,7 +15,7 @@ parameters:
   - PRoduction
 
 variables:
-- group: $ {{ join('vercel-ofm-', parameters.env)}}vercel-ofm-dev
+- group: $ {{ join('vercel-ofm-', parameters.env)}}
 
 
 trigger: none
