@@ -27,6 +27,6 @@ steps:
 - script:
     echo "Hello World develop"
 - script: 
-    echo ${{ vercel-ofm-dev.PUBLIC_URL }}
+    echo ${{ PUBLIC_URL }}
 - script: 
     echo ${{ parameters.env }}
