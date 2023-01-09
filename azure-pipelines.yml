@@ -5,14 +5,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 parameters:
-- name: image
-  displayName: Pool Image
+- name: env
+  displayName: Deployment Environment
   type: string
-  default: ubuntu-latest
+  default: Dev
   values:
-  - windows-latest
-  - ubuntu-latest
-  - macOS-latest
+  - Dev
+  - QA
+  - PRoduction
 
 trigger: none
 
