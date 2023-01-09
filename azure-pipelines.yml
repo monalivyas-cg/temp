@@ -5,17 +5,16 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 parameters:
-- name: environment
-  displayName: Checkout clean
-  type: boolean
-  default: true
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
   values:
-  - false
-  - true
+  - windows-latest
+  - ubuntu-latest
+  - macOS-latest
 
-trigger:
-  - main
-  - develop
+trigger:none
 
 pool:
   vmImage: ubuntu-latest
