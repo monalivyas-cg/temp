@@ -15,7 +15,7 @@ parameters:
   - PRoduction
 
 variables: 
-- group: vercel-ofm-dev
+- group: vercel-ofm-${{ parameters.env }}
 
 
 trigger: none
@@ -28,7 +28,6 @@ steps:
     echo "Hello World develop"
 - script: 
     echo ${{ parameters.env }}
-    echo vercel-ofm-${{ parameters.env }}
 - script: 
     echo $(PUBLIC_URL)
     echo $(VERCEL_ORG_ID)
