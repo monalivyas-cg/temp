@@ -28,7 +28,7 @@ steps:
     echo "Hello World develop"
 - script: 
     echo ${{ parameters.env }}
-    echo $ {{ join("vercel-ofm-"", parameters.env)}}
+    echo $ {{ join("vercel-ofm-", parameters.env)}}
 - script: 
     echo $(PUBLIC_URL)
     echo $(VERCEL_ORG_ID)
