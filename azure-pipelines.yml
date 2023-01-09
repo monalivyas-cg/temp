@@ -29,6 +29,6 @@ steps:
 - script:
     echo "Hello World develop"
 - script: 
-    echo ${{ PUBLIC_URL }}
+    echo $(PUBLIC_URL)
 - script: 
     echo ${{ parameters.env }}
